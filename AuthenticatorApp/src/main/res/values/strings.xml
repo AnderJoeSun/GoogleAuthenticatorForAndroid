@@ -45,7 +45,7 @@
 
   <!-- Label for menu option: display an set of help pages explaining how 2-step verification
        works. -->
-  <string name="how_it_works_menu_item">How it works</string>
+  <string name="how_it_works_menu_item">toggle order</string>
 
   <!-- Title of the main (top-level) preference/settings screen. -->
   <string name="main_preference_screen_title">Settings</string>

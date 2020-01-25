@@ -1,3 +1,17 @@
+## google-authenticator-android
+Google authenticator app for android
+
+## Updates by zhengnian.me
+1. Smaller size of all kinds of Views' layouts so that more than 50 lines shown in one screen
+
+2. And sort function: toogle to order by name or by created time
+
+## Screenshots
+![github](https://github.com/AnderJoeSun/google-authenticator-android/blob/master/screenshots/preview.jpg "github")
+
+_The left one is the original version from Google, and the right one is the current version by zhengnian.me_ 
+
+## Original Readme
 Google Authenticator for Android (open source version)
 ======================================================
 Copyright 2010 Google Inc.

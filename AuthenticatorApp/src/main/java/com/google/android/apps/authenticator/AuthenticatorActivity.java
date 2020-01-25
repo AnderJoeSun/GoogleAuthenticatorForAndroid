@@ -62,6 +62,7 @@ import android.widget.Toast;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * The main activity that displays usernames and codes
@@ -77,6 +78,8 @@ public class AuthenticatorActivity extends TestableActivity {
   private static final String LOCAL_TAG = "AuthenticatorActivity";
   private static final long VIBRATE_DURATION = 200L;
 
+  private static boolean ORDER_BY_TIME = false; // zhengnian.me: order by name default 
+  
   /** Frequency (milliseconds) with which TOTP countdown indicators are updated. */
   private static final long TOTP_COUNTDOWN_REFRESH_PERIOD = 100;
 
@@ -417,6 +420,12 @@ public class AuthenticatorActivity extends TestableActivity {
   public void refreshUserList(boolean isAccountModified) {
     ArrayList<String> usernames = new ArrayList<String>();
     mAccountDb.getNames(usernames);
+    
+    // zhengnian.me 2018.08.18 ..start
+	if (!ORDER_BY_TIME) {
+	  Collections.sort(usernames);
+	}
+	// zhengnian.me 2018.08.18 ..end
 
     int userCount = usernames.size();
 
@@ -770,7 +779,15 @@ public class AuthenticatorActivity extends TestableActivity {
         addAccount();
         return true;
       case R.id.how_it_works:
-        displayHowItWorksInstructions();
+//        displayHowItWorksInstructions();
+    	// zhengnian.me 2018.08.18 ..start
+    	  if (ORDER_BY_TIME) {
+    		  ORDER_BY_TIME = false;
+    	  } else {
+    		  ORDER_BY_TIME = true;
+    	  }
+    	  refreshUserList(true);
+    	  // zhengnian.me 2018.08.18 ..end
         return true;
       case R.id.settings:
         showSettings();

@@ -64,7 +64,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="10sp"
         android:layout_marginRight="10sp"
-        android:layout_marginTop="10sp"
         android:orientation="vertical">
         <TextView
           android:id="@+id/enter_pin_prompt"
@@ -72,6 +71,7 @@
           android:textAppearance="?android:attr/textAppearanceMedium"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
+          android:visibility="gone"
         />
       </LinearLayout>
     </LinearLayout>
