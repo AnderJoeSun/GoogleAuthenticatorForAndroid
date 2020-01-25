@@ -11,6 +11,9 @@ Google authenticator app for android
 
 _The left one is the original version from Google, and the right one is the current version by zhengnian.me_ 
 
+## Blog for development
+[定制开源GA验证码应用](https://zhengnian.me/2020/01/25/google.authenticator.android/)
+
 ## Original Readme
 Google Authenticator for Android (open source version)
 ======================================================
