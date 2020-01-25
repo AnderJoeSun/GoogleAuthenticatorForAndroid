@@ -7,7 +7,7 @@ Google authenticator app for android
 2. And sort function: toogle to order by name or by created time
 
 ## Screenshots
-![github](https://github.com/AnderJoeSun/google-authenticator-android/blob/master/screenshots/preview.jpg "github")
+![github](https://github.com/AnderJoeSun/GoogleAuthenticatorForAndroid/blob/master/screenshots/preview.jpg "github")
 
 _The left one is the original version from Google, and the right one is the current version by zhengnian.me_ 
 
